@@ -1,0 +1,47 @@
+.titre1{
+    color:red
+}
+
+.titre2{
+    color:blue
+}
+
+.titre3{
+    color:yellow
+}
+
+.titre4{
+    color:beige
+}
+
+.titre5{
+    font-size: 20px;
+}
+
+.titre6{
+    font-size: 2rem;
+}
+
+.paragraphe1{
+    font-weight: bold;
+}
+
+.paragraphe2{
+    font-weight: 100;
+}
+
+.span1{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.span2{
+font-family: 'Times New Roman', Times, serif;
+}
+
+.button1{
+    border-radius: 10px;
+}
+
+.button2{
+    border-radius: 10%;
+}
