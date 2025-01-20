@@ -1,5 +1,5 @@
 
-div{
+.divInput{
     background-color: beige;
     border: 1px solid black;
     padding: 10px;
@@ -33,4 +33,58 @@ div{
 .button2:hover{
     background-color: blue;
     color: white;
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color:red
+    
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color:blue
+}
+
+.div3{
+    width: 200px;
+    height: 200px;
+    background-color:yellow
+}
+
+.div4{
+    width: 200px;
+    height: 200px;
+    background-color:beige
+}
+
+h2{
+    text-align: center;
+    color: blue;
+}
+.divmaman1{
+    display:flex;
+    gap: 10px;
+}
+
+.divmaman2{
+    display:flex;
+    justify-content: space-between;
+}
+
+.divmaman3{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.divmaman4{
+    display:flex;
+    justify-content: center;
+}
+
+.divmaman5{
+    display:flex;
+    justify-content: space-around;
 }
