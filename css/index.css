@@ -1,98 +1,304 @@
-.div1{
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color : brown;
-    border-radius:24px;
-}
-
-.div2{
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color : brown;
-    border-radius:24px;
-    
-}
-.div3{
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color : brown;
-    border-radius:24px;
-    
-}
-.divmaman{
-    background-color: beige;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    gap: 5%;
-}
-
-.divmaman div{
-    border: 1px solid black;
-    border-radius: 24px;
-    padding: 1rem;
-    background-color: white;
-    box-shadow: 0 0 10px black;
-}
-.divmaman div:hover {
-    scale: 1.1;
-    transition: 0.5s ease-in-out;
-}
-img{
-    
-    height: 300px;
-    animation: monter-descendre 1.5s infinite;
-    
-}
 
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    background-color: #13181d;
+    font-family: Montserrat, sans-serif;
+    color:white;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+header{
+    background: linear-gradient(#13181d, #20212e, #341b47)
+    
+}
+.Navig {
+    display: flex;
+   
+    color: grey;
+    justify-content: space-between;
 }
 
-@keyframes monter-descendre {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.NomSite {
+    color: rgb(214, 54, 214);
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-left:100px;
 }
 
-.btn{
-    padding: 10px 20px;
-    border-radius: 10px;
-    border:none;
-    background-color: beige;
-    color:grey;
-    font-weight: bold;
-    font-size: 15px;
+.Menu {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    align-items: center;
 }
 
-.btn:hover{
+.Menu p{
+    margin: 0 15px 0 0;
+    color : #ccc;
+    font-size: 1.3em;
+    font-family: Montserrat, sans-serif;
+   
+}
+
+.BoutonMenu{
+    color: rgb(214, 54, 214);
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid rgb(214, 54, 214);
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-family: Arial;
     cursor: pointer;
-    background-color: gray;
-    color: beige;
-    transition: 0.5s ease-in-out;
+    transition: color 0.5s, background-color 0.5s;
 }
 
-.nomBotte{
-    font-weight: bold,
-    color rgb(51,28,1);
-    margin : 1rem 0rem;
+.BoutonMenu:hover{
+    color: white;
+    background-color: rgb(214, 54, 214);
+}
+
+.Bandeau{
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BandeauTexte{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.BandeauTexte h1{
+    margin: 0;
+    
+    width: 80%;
+}
+
+.BandeauTexte p{
+    font-weight: 300;
+    color: #ccc;
+    font-family: Montserrat, sans-serif;
+    
+}
+.BandeauTexte button{
+        width: 20%;
+        color: white;
+        font-size: 16px;
+        margin: 10px;
+        border: 1px solid rgb(214, 54, 214);
+        background-color: rgb(214, 54, 214);
+        border-radius: 10px;
+        padding: 15px;
+        font-family: Arial;
+        cursor: pointer;
+        transition: color 0.5s, background-color 0.5s;
+    
+}
+
+.BandeauTexte button:hover{
+    color: rgb(214, 54, 214);
+    
+    background-color: black;
+}
+.ImageBandeauTexte{
+    display: flex;
+    margin: 30px 0;
+    padding: 0 10px;
+
+    
+}
+.ImageBandeau{
+    display: flex;
+    padding: 20px;
+    background-color: #33314d;
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    transition: filter 0.5s;
+}
+.ImageBandeau:hover{
+    filter: brightness(0.5);
+}
+.ImageBandeau img{
+   width: 120px;;
+}
+
+.BandeauImage img{
+   width: 100%;
+}
+
+.Produit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 30px 5%;
+    margin-top: 5%;
+}
+
+.NewProduit{
+    color: rgb(214, 54, 214);
+    font-size: 1.3em;
+}
+
+.TitreNewProduit{
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+
+.Description{
+    font-weight: 300;
+    color: #ccc;
+    font-family: Montserrat, sans-serif;
+    
+}
+
+.ButtonNewProduit{
+    width: 20%;
+    color: rgb(214, 54, 214);
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid rgb(214, 54, 214);
+    background-color: #13181d;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: Arial;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+
+}
+
+.ButtonNewProduit:hover {
+    
+    color: white;
+    background-color: rgb(214, 54, 214);
+    
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding: 30px 5%;
+    margin-top: 5%;
+}
+
+.Footerfils h3{
+    color: rgb(214, 54, 214);
+    font-size: 1.8em;
+    
+}
+
+.Footerfils p{
+    font-weight: 300;
+    color: #ccc;
+    font-family: Montserrat, sans-serif;
+    
+} 
+
+.toggleClose h1 {
+    font-weight: 400;
+    color: #ccc;
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+}
+@media screen and (max-width : 640px ){
+    .NomSite{
+        margin-left: 30px;
+        
+    }
+    .Bandeau{
+        flex-direction: column;
+    }
+    .BandeauTexte button{
+        width: 150px;
+    }
+    .ImageBandeauTexte{
+        max-width: 180px;
+        flex-direction: column;  
+    }
+    .Produit{
+        flex-direction: column;
+    }
+    .ButtonNewProduit{
+        width: 150px;
+    }
+    Footer {
+        flex-direction: column;
+    }
+    .Navig{
+        position:fixed;
+        top: 0px;
+        right:-600px;
+        background-color: #13181d;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 50px;
+        
+    }
+    .Menu{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+    }
+    
+    .toggle{
+        position:fixed;
+        display: flex;
+        right: 40px;
+        top: 40px;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .NomSite{
+        margin-left: 0px;
+    }
+    
+    .Hamburger{
+        padding: 3px 15px;
+        background-color: white;
+    }
+    .toggleClose{
+        position:fixed;
+        display: flex;
+        right: -600px;
+        top: 10px;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+}
+
+@media screen and (max-width :540px){
+    
 }

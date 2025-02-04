@@ -1,18 +1,22 @@
-const buttonAjouterPanier1 = document.getElementById("btn1");
-const buttonAjouterPanier2 = document.getElementById("btn2");
-const buttonAjouterPanier3 = document.getElementById("btn3");
-console.log(buttonAjouterPanier1);
-console.log(buttonAjouterPanier2);
-console.log(buttonAjouterPanier3);
+const Toggle = document.getElementById("toggle");
+const navig = document.getElementById("Navig")
+const Close = document.getElementById("toggleClose");
 
-buttonAjouterPanier1.addEventListener('click', () => {
-    alert('Article  1 ajouté au panier');
-});
+console.log(Toggle);
 
-buttonAjouterPanier2.addEventListener('click', () => {
-    alert('Article  2 ajouté au panier');
-});
 
-buttonAjouterPanier3.addEventListener('click', () => {
-    alert('Article 3 ajouté au panier');
-});
+Toggle.addEventListener('click', () => {
+    navig.style.right='0px';
+    console.log('clicked');
+    Toggle.style.right='-600px';
+    Close.style.right='40px';
+
+})
+
+Close.addEventListener('click', () => {
+    navig.style.right='-600px';
+    console.log('clicked');
+    Toggle.style.right='40px';
+    Close.style.right='-600px';
+
+})
