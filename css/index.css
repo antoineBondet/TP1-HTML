@@ -219,13 +219,10 @@ footer{
     font-family: Montserrat, sans-serif;
     
 } 
-
-.toggleClose h1 {
-    font-weight: 400;
-    color: #ccc;
-    font-family: Montserrat, sans-serif;
-    font-size: 2em;
+.toggleClose{
+    display: none;
 }
+
 @media screen and (max-width : 640px ){
     .NomSite{
         margin-left: 30px;
@@ -280,6 +277,7 @@ footer{
         gap: 5px;
         
     }
+    
     .NomSite{
         margin-left: 0px;
     }
@@ -295,7 +293,12 @@ footer{
         top: 10px;
         flex-direction: column;
         gap: 5px;
-        
+    }
+    .toggleClose h1 {
+        font-weight: 400;
+        color: #ccc;
+        font-family: Montserrat, sans-serif;
+        font-size: 2em;
     }
 }
 
